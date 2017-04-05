@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    tools:context="com.example.kevinzavier.caloriecounter.DisplayFoodsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#00ACC1"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029999971">
+
+        <TextView
+            android:id="@+id/totalAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:paddingRight="10dp"
+            android:text="@string/food_total_text"
+            android:textColor="#fff3f6ff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" | "
+            android:textColor="#ffee1d27"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/totalItemsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/food_items_num_text"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:divider="#000"
+        android:dividerHeight="2dp"
+        app:layout_constraintLeft_toLeftOf="@+id/linearlayout"
+        app:layout_constraintRight_toRightOf="@+id/linearlayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout"
+        app:layout_constraintHorizontal_bias="0.0"></ListView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
